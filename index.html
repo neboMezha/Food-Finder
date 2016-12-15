@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Food Finders</title>
+	<link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	
+</head>
+<body>
+	<canvas width="1000" height="800">
+	</canvas>
+	<aside>
+	<section>
+	<h1>Food Finders</h1>
+		<input id="searchFood" type="text" name="name" value="potato">
+		<input id="search" type="submit" value="Go">
+		<br>
+		<input type="radio" name="calorie" value="low" onclick ="setCal(this.value)" checked="true">Low Calorie<br>
+		<input type="radio" name="calorie" value="mid" onclick ="setCal(this.value)">Mid Calorie<br>
+		<input type="radio" name="calorie" value="high" onclick ="setCal(this.value)">High Calorie<br>
+		<br>
+		Diet: <select id="category">
+			<option value="balanced">Balanced</option>
+			<option value="high-protein">High Protein</option>
+			<option value="low-carb">Low Carb</option>
+			<option value="low-fat">Low Fat</option>
+			<option value="low-sodium">Low Sodium</option>
+		</select>
+		
+		<br>
+	<p><button onclick="findLoc()">Stores Near Me</button></p>
+		<!--
+		<input id="searchMapInput" type="text" name="zip" value="zip code">
+		<input id="searchMap" type="submit" value="Go">
+		-->
+	</section>
+	
+	<figure id="mapDiv"></figure>
+  
+	</aside>
+	<img id="bg" src="bg.jpg" alt="background">
+	<div id="dynamicContent">
+	</div>
+	
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBQPAajLdTvvZ3KyT027u7NYuKQcAXYz4&libraries=places&callback=initMap" async defer></script>
+</body>
+
+</html>

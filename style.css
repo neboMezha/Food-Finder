@@ -1,0 +1,81 @@
+body{
+	background-color: #ffdb66;
+	margin:0;
+	padding:0;
+	font-family: 'Sriracha', cursive;
+}
+h1{
+	font-size: 24pt;
+	margin:0;
+	padding-top: 10px;
+}
+aside{
+	top:0;
+	left:0;
+	position:fixed;
+	height:100%;
+	width:450px;
+	text-align: center;
+	/*background-color:#ffdb66;*/
+	background-color: rgba(255, 219, 102, 0.7);
+}
+#dynamicContent{
+	margin-left: 475px;
+	z-index: 10;
+}
+form{
+	font-size: 18pt;
+}
+input{
+	height:20px;
+	width:20px;
+}
+#search{
+	height:30px;
+	width:30px;
+}
+#searchFood{
+	width:150px;
+	height: 20px;
+}
+figure{
+	margin: auto;
+	position: relative;
+	width: 95%;
+	width: 450px;
+	height: 60%;
+}
+#mapDiv{
+	width: 95%;
+}
+.imageSide{
+	width: 300px;
+}
+.recipe{
+	display: inline-table;
+	width: 300px;
+	margin-bottom: 10px;
+	margin-right: 40px;
+	padding: 10px;
+	background-color: #ffdb66;
+	box-shadow: inset 0 0 10px #993d00;
+}
+h3{
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+#bg{
+	position:fixed;
+	z-index:-2;
+	width:100%;
+	min-width:480px;
+	height:100%;
+	left:0;
+	top:0;
+	opacity: 0.5;
+}
+canvas{
+	width:100%;
+	position: fixed;
+	z-index: -1;
+}
